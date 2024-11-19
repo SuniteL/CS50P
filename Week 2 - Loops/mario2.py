@@ -1,7 +1,15 @@
 def main():
-    print_row(4)
+    print_square(3)
 
-def print_row(width):
-    print("?" * width)
+#for each row in suqare
+def print_square(size):
+    
+    # For each brick in row
+    for i in range(size):
+
+        # Print brick
+        for j in range(size):
+            print("#", end="")
+        print()
 
 main()
